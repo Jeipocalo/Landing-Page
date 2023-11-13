@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      background-color: #0F0F0F;
+      color: #F4CE14;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #232D3F;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: monospace;
+      border-right: 4px solid;
+      width: 31ch;
+      white-space: nowrap;
+      overflow: hidden;
+      color: #F99417;
+      animation: typing 2s steps(31),
+      blinking 0.5s infinite step-end alternate;
+    }
+
+    h3 {
+      color: #EB6F00;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes blinking  {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+
+    .code {
+      background-color: #005B41;
+      color: #16FF00; 
+      padding: 1rem;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+    }
+
+    
+
+
+    .progress-bar {
+      background-color: #28003B;
+      height: 20px;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .progress-fillpython {
+      height: 100%;
+      width: 90%;
+      background: linear-gradient(to right, #4B8BBE 0%, #4B8BBE 25%, #306998 25%, #306998 50%, #FFE873 50%, #FFE873 75%, #FFD43B 75%, #FFD43B 100%);
+      border-radius: 5px;
+      animation: loadingpython 1.5s ease-in-out;
+    }
+
+    @keyframes loadingpython {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 90%;
+      }
+    }
+
+    .progress-fillhtml {
+      height: 100%;
+      width: 50%;
+      background: linear-gradient(to right, #F06529 0%, #F06529 25%, #E34C26 25%, #E34C26 50%, #2565AE 50%, #2565AE 75%, #0F5298 75%, #0F5298 100%);
+      border-radius: 5px;
+      animation: loadinghtml 1.5s ease-in-out;
+    }
+
+    @keyframes loadinghtml {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 50%;
+      }
+    }
+
+    .progress-filljavascript {
+      height: 100%;
+      width: 30%;
+      background: linear-gradient(to right, #323330 0%, #323330 50%, #F0DB4F 50%, #F0DB4F 100%);
+      border-radius: 5px;
+      animation: loadingjava 1.5s ease-in-out;
+    }
+
+    @keyframes loadingjava {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 30%;
+      }
+    }
+
+    .progress-fillC {
+      height: 100%;
+      width: 70%;
+      background-color: #4B8BBE;
+      border-radius: 5px;
+      animation: loadingc 1.5s ease-in-out;
+    }
+
+    @keyframes loadingc {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joao Pedro Vergopolan Vendramel</h1>
+    <p>FullStack Developer</p>
+  </header>
+
+  <section>
+    <h2>About me</h2>
+    <div class="code">
+      <p>I am a Developer from Brazil, looking for remote jobs. I can speak english and have the most experience programming in Python.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Proficiency in Languages</h2>
+    <div class="code">
+      <p>Python</p>
+      <div class="progress-bar">
+        <div class="progress-fillpython"></div>
+      </div>
+      <p>C and C++</p>
+      <div class="progress-bar">
+        <div class="progress-fillC"></div>
+      </div>
+      <p>HTML and CSS</p>
+      <div class="progress-bar">
+        <div class="progress-fillhtml"></div>
+      </div>
+      <p>JavaScript</p>
+      <div class="progress-bar">
+        <div class="progress-filljavascript"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="code">
+      <h3>SCC Comercial</h3>
+      <p>I work as a Data Analyst, manipulating data using mainly 
+        Python and also creating Dashboards on PowerBI.</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Degree</h2>
+    <div class="code">
+      <h3>Computer Engineering</h3>
+      <p>I study Computer Engineering at "Universidade Positivo Ecoville",
+         started on 2020. There I started programming and since then have been improving my skills.</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="code">
+      <p>Email: jeipocalo@gmail.com</p>
+      <p>LinkedIn: www.linkedin.com/in/joao-pedro-vergopolan-vendramel-971827234/</p>
+      <p>GitHub: github.com/Jeipocalo/Vendramel-Projects</p>
+    </div>
+  </section>
+
+</body>
+</html>
